@@ -15,7 +15,7 @@ It presents a summary view of running domains, their live performance &amp;amp; 
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/joshfng/unraid-templates/main/images/virt-manager.png</Icon>
+  <Icon>https://raw.githubusercontent.com/joshfng/unraid-templates/main/joshfng/icons/virt-manager.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>adguard</Name>
+  <Repository>adguard/adguardhome</Repository>
+  <Registry>https://registry.hub.docker.com/r/adguard/adguardhome</Registry>
+  <Network>eth0</Network>
+  <MyIP />
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project />
+  <Overview></Overview>
+  <Category>Network DNS</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>
+    https://raw.githubusercontent.com/joshfng/unraid-templates/main/joshfng/adguard.xml</TemplateURL>
+  <Icon>
+    https://raw.githubusercontent.com/joshfng/unraid-templates/main/joshfng/icons/adguard.png</Icon>
+  <ExtraParams />
+  <PostArgs />
+  <CPUset />
+  <DateInstalled>1669639825</DateInstalled>
+  <DonateText />
+  <DonateLink />
+  <Requires />
+  <Config Name="Working Directory" Target="/opt/adguardhome/work"
+    Default="/mnt/user/appdata/adguard/workingdir" Mode="rw" Description="/opt/adguardhome/work"
+    Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/adguard/workingdir</Config>
+  <Config Name="Working Directory" Target="/opt/adguardhome/conf"
+    Default="/mnt/user/appdata/adguard/config" Mode="rw" Description="Configuration Directory"
+    Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/adguard/config</Config>
+  <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Port of the Web UI"
+    Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="DNS Server TCP" Target="53" Default="53" Mode="tcp"
+    Description="TCP Port that is used for the DNS Server (Changing this is not recomended)"
+    Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
+  <Config Name="DNS Server UDP" Target="53" Default="53" Mode="udp"
+    Description="UDP Port that is used for the DNS Server (Changing this is not recomended)"
+    Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
+</Container>
